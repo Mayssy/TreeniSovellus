@@ -37,7 +37,7 @@ const Home = () => {
       />
       <button onClick={handleAddUser}>Lisää käyttäjä</button>
 
-      <h3>Käyttäjät</h3>
+      <h3>Käyttäjät GITTI</h3>
       <ul>
         {users.map((user, index) => (
           <li key={index}>
