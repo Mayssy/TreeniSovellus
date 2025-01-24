@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/home">Valitse Käyttäjä</Link> {/* Käytetään Link-komponenttia */}
+        <Link to="/home">Valitse Käyttäjä GITTESTI</Link> {/* Käytetään Link-komponenttia */}
       </nav>
       <Routes>
         <Route path="/home" element={<Home />} />
