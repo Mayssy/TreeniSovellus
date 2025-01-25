@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 
 const TrainingList = () => {
@@ -83,15 +83,16 @@ const TrainingList = () => {
       <ul>
         {workouts.map((workout, index) => (
           <li key={index}>
-            {workout.name}
-            <button onClick={() => handleRemoveWorkout(workout.name)}>
-              Poista
-            </button>
+                      {workout.name}
+            {/* Linkki EditTraining-komponenttiin */}
+            <Link to={`/edit-training/${workout.name}`}>Tarkastele ja muokkaa treeniä</Link>
+            <button onClick={() => handleRemoveWorkout(workout.name)}>Poista</button>
           </li>
         ))}
       </ul>
     </div>
   );
+
 };
 
 export default TrainingList;

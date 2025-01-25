@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  color: #444;
+  color: #ce1212;
   margin-left: 20px;
 }
 
@@ -107,3 +107,33 @@ form {
   flex-direction: column;
   margin-top: 20px;
 }
+
+/* Link to*/
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #c03c85; /* Taustaväri */
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #7e25b3; /* Tummempi väri hover-tilassa */
+  transform: scale(1.05); /* Suurentaa linkkiä hover-tilassa */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Lisää varjoa hover-tilassa */
+}
+
+a:active {
+  background-color: #a63726; /* Vielä tummempi väri aktiivisessa tilassa */
+  transform: scale(1); /* Poistaa suurennuksen aktiivisessa tilassa */
+}
+
+a:focus {
+  outline: none; /* Poistaa oletuskehys */
+}
+
